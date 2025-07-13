@@ -1,15 +1,38 @@
 @import 'tailwindcss';
+@import "tailwind-animate";
 
-@plugin 'tailwindcss-animate';
-
-@source '../views';
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-
-@font-face {
-    font-family: 'Quicksand';
-    src: url('/assets/font/quicksand.ttf') format('truetype');
+@theme {
+  --font-sans: 'Quicksand', ui-sans-serif, system-ui, sans-serif;
 }
 
-.font-quicksand {
-  font-family: 'Quicksand', serif;
+/* Quicksand font faces */
+@font-face {
+  font-family: 'Quicksand';
+  src: url('/assets/font/Quicksand-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Quicksand';
+  src: url('/assets/font/Quicksand-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Quicksand';
+  src: url('/assets/font/Quicksand-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Quicksand';
+  src: url('/assets/font/Quicksand-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Quicksand';
+  src: url('/assets/font/Quicksand-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
 }

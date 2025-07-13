@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
   const currentPath = url.split('/')[1] || 'home';
 
   return (
-    <header className="fixed top-0 w-full z-50 text-white bg-transparent">
+    <header className="fixed top-1 w-full z-50 text-white bg-transparent">
       <div className="px-[100px] py-4 flex justify-between items-center">
         {/* left: branding with Popout animation */}
         <Popout
@@ -20,12 +20,7 @@ const Navbar: React.FC = () => {
           className="flex items-center gap-2"
           delay={0.3}
         >
-          <img
-            src="/assets/logo/star.svg"
-            alt="star logo"
-            className="w-[50px] h-[50px]"
-          />
-          <span className="text-[40px] font-semibold tracking-wide">BOB</span>
+          <span className="text-[45px] font-semibold tracking-wide">BOB</span>
         </Popout>
 
         {/* center: nav links inside shared white pill with Circle animation */}
